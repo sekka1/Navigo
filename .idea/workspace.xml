@@ -2,164 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a04ab0b-c754-4c96-9fc1-e5be2997d824" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Book.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Calendar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Chat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Clipboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Compas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Gift-Box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Infinity-Loop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Navigo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Pensils.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Pocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Retina-Ready.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceCodePro-Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceCodePro-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceCodePro-ExtraLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceCodePro-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceCodePro-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceCodePro-Semibold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-BlackIt.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-BoldIt.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-ExtraLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-ExtraLightIt.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-It.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-LightIt.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-Semibold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/SourceSansPro-SemiboldIt.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Toilet-Paper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Watches.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/done-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/done.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/img/form.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/fullscreen-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/fullscreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/login/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/login/imac-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/login/imac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-black-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-black-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-black-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bolditalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bolditalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bolditalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-italic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-italic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-italic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-light-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-light-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/footer/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/switch/mask-square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/switch/mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/pause-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/play-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/poster.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/tile/ribbon-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/tile/ribbon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/search-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/todo-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/todo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-full-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-full.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-off-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/CSSPlugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.dev.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/TweenLite.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/app.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/app.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/bgStyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/bgStyle.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/blueGrass.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/blueGrass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/blueGrass.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/book.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/bootswatch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/bootswatch.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/chat.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/clipboard.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/clocks.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/compas.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/flat-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/flat-ui.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/fuelUX.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/fuelux-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/fuelux-responsive.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/gift-box.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/extra/hammer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/icomoon-session.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/jqBootstrapValidation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/jquery-2.1.b1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/extra/jquery.flot.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/extra/jquery.gamequery-0.7.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-black-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-bolditalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-italic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-light-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/lato/lato-regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/extra/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/loop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/mail.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/map.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/paper-bag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/pencils.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/require.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/retina.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/signals.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/SourceCodePro/stylesheet.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/toilet-paper.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/transparency.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/variables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/flaty/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/extra/zepto.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Receiver/client.html" afterPath="$PROJECT_DIR$/Receiver/client.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Receiver/devTest.html" afterPath="$PROJECT_DIR$/Test/ReceiverDevTest.html" />
     </list>
     <ignored path="Navigo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -275,6 +118,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Navigo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Navigo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Sender" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -306,6 +163,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Receiver" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Test" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -317,6 +177,13 @@
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -332,12 +199,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="362" y="22" width="1232" height="927" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24789207" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24789207" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -442,16 +309,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Receiver/devTest.html">
+    <entry file="file://$PROJECT_DIR$/Test/ReceiverDevTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Receiver/client.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="4" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

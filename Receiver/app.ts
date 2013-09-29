@@ -12,6 +12,7 @@ require(['assets/jquery-2.1.b1.js'
 
 	] , function() { // we loaded:
 			CSSPlugin.defaultTransformPerspective = 500;
+			viewDir = 'view/'
 			openCats()
 
 			// sock *****************************
@@ -38,7 +39,6 @@ function onSocket(data) {
 
 //http://www.greensock.com/css3
 var setDur = .3
-viewDir = 'view/'
 var categories  = [];
 var threads = [];
 var posts = [];
@@ -80,7 +80,6 @@ function onThreadData(data) {
 	},400)
 }
 
-
 // NAV: ********************************
 var level:number=1; // cat, thread, post
 var catNav=0
@@ -88,19 +87,24 @@ var threadNav=0
 var postNav=0
 function onDown() {
 	console.log('down')
-	if(1==level) {
-		deSelect()
+	deSelect()
+	if(1==level)
 		select(categories[++catNav])
-	}
-	if(2==level) {
 
-	}
+	if(2==level)
+		select(threads[++threadNav])
+
 }
 function onUp() {
 	console.log('up')
+	deSelect()
 	if(1==level) {
-		deSelect()
+		--catNav
 		select(categories[catNav])
+	}
+	if(2==level) {
+		--threadNav
+		select(threads[threadNav])
 	}
 }
 function onRight() {
@@ -116,6 +120,9 @@ function select(id) {
 	$('#'+id).css('border', '3px solid black');
 }
 function deSelect() {
-	$('.cats').css('border-width', '0');
+	if(1==level)
+		$('.cats').css('border-width', '0');
+	if(2==level)
+		$('.threads').css('border-width', '0');
 }
 

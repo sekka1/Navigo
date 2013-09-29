@@ -8,6 +8,7 @@ require([
     'assets/CSSPlugin.min.js',
 	 'bind.js',
 	 'http://scdn-primus.netdna-ssl.com/latest/cloudAPI.js',
+	 'http://scdn-primus.netdna-ssl.com/CORS.js',
 	 'assets/more/transparency.min.js',
  	 'http://ws.algorithms.io/socket.io/socket.io.js',
     'assets/more/keymaster.min.js',

@@ -66,13 +66,14 @@ function openCats() {
 	},400)
 }
 function openThread(catId){
+	level=2
 	onThreadData()
 }
 function onThreadData(data) {
 	threads = [];
 	var list = ["Sports","Politics", "Kardashians"];
 	for (var i = 0; i < list.length; i++) {
-		forward('thread','kontainer2','thread',onThread)
+		forward2('thread','kontainer2','thread',onThread)
 	}
 	setTimeout(function() {
 		select(threads[0])
@@ -87,14 +88,20 @@ var threadNav=0
 var postNav=0
 function onDown() {
 	console.log('down')
-	deSelectAll()
-	select(categories[++catNav])
+	if(1==level) {
+		deSelect()
+		select(categories[++catNav])
+	}
+	if(2==level) {
+
+	}
 }
 function onUp() {
 	console.log('up')
-	deSelectAll()
-	--catNav
-	select(categories[catNav])
+	if(1==level) {
+		deSelect()
+		select(categories[catNav])
+	}
 }
 function onRight() {
 	console.log('right')
@@ -108,7 +115,7 @@ function select(id) {
 		},600);
 	$('#'+id).css('border', '3px solid black');
 }
-function deSelectAll() {
+function deSelect() {
 	$('.cats').css('border-width', '0');
 }
 

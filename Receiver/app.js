@@ -1,4 +1,4 @@
-console.log('loaded2');
+console.log('loaded v02');
 
 //document.body.style.cursor = 'wait'
 require([
@@ -12,26 +12,20 @@ require([
     CSSPlugin.defaultTransformPerspective = 500;
     openCats();
 
+    // sock *****************************
     //var socket = io.connect('http://ws.algorithms.io')
     setTimeout(function () {
         //socket.on('query_get_last_motion_data', onSocket)
     }, 500);
 
-    key('d', function () {
-        console.log('right');
-    });
+    //nav *****************************
+    key('d', onRight);
     key('a', function () {
         console.log('left');
     });
-    key('w', function () {
-        console.log('up');
-    });
-    key('s', function () {
-        console.log('down');
-    });
-    key('q', function () {
-        console.log('home');
-    });
+    key('w', onUp);
+    key('s', onDown);
+    key('q', onUp);
 });
 
 function onSocket(data) {
@@ -47,20 +41,51 @@ var categories = [];
 var threads = [];
 var posts = [];
 var level = 1;
-var position = 1;
+var catPos = 1;
 function onCard(nID) {
-    console.log(nID);
+    //console.log(nID)
     categories.push(nID);
-    position++;
+    catPos++;
     var card = document.getElementById(nID);
     TweenLite.from(card, setDur, { rotationX: -40 });
     TweenLite.to(card, setDur, { scaleX: .8, scaleY: .8 });
 }
 
 function openCats() {
-    var list = ["Hello", "World"];
+    var list = ["Sports", "Politics", "Kardashians"];
     for (var i = 0; i < list.length; i++) {
         forward('cat', 'cat', onCard);
     }
+    setTimeout(function () {
+        select(categories[0]);
+    }, 600);
+}
+
+var catNav = 0;
+function onDown() {
+    console.log('down');
+    deSelectAll();
+    select(categories[++catNav]);
+}
+
+function onUp() {
+    console.log('up');
+    deSelectAll();
+    --catNav;
+    select(categories[catNav]);
+}
+function onRight() {
+    console.log('right');
+}
+
+function select(id) {
+    console.log(id);
+    $('html, body').animate({
+        scrollTop: $('#' + id).offset().top
+    }, 600);
+    $('#' + id).css('border', '3px solid black');
+}
+function deSelectAll() {
+    $('.cats').css('border-width', '0');
 }
 //# sourceMappingURL=app.js.map

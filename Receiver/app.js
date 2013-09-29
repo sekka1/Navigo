@@ -8,7 +8,8 @@ require([
     'assets/CSSPlugin.min.js',
     'http://ws.algorithms.io/socket.io/socket.io.js',
     'assets/more/keymaster.min.js',
-    'http://cdn.pubnub.com/pubnub-3.5.4.min.js'
+    'http://cdn.pubnub.com/pubnub-3.5.4.min.js',
+    'con.js'
 ], function () {
     CSSPlugin.defaultTransformPerspective = 500;
     viewDir = 'view/';
@@ -19,6 +20,8 @@ require([
     setTimeout(function () {
         //socket.on('query_get_last_motion_data', onSocket)
     }, 500);
+
+    conInit();
 
     //nav *****************************
     key('d', onRight);

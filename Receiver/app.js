@@ -56,7 +56,7 @@ function onCat(nID) {
     //TweenLite.to(card, setDur, {y:25});
 }
 function openCats() {
-    var list = ["Sports", "Politics", "Kardashians"];
+    var list = ["Sports", "Politics", "Kardashians", "FoxNews", "CNN", "DistroWatch"];
     for (var i = 0; i < list.length; i++) {
         forward2('cat', 'kontainer1', 'cat', onCat);
     }

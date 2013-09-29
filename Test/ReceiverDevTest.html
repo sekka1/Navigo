@@ -23,6 +23,27 @@
                                         + '|  rotation_y: ' + data.data.rotation_y
                                         + '|  rotation_z: ' + data.data.rotation_z
         );
+
+        if(  (data.data.gyroscope_z > 20 ) ){
+            $('#prediction').text('right');
+            //console.log('right');
+            ///onRight();
+        }
+        if( (data.data.gyroscope_z < -20 ) ){
+            $('#prediction').text('left');
+            //console.log('left');
+            //onLeft();
+        }
+        if( (data.data.gyroscope_y > 40 ) ){
+            $('#prediction').text('up');
+            //console.log('up');
+            //onUp();
+        }
+        if( (data.data.gyroscope_y < 15 ) ){
+            $('#prediction').text('down');
+            //console.log('down');
+            //onDown();
+        }
     });
 </script>
 
@@ -31,7 +52,7 @@
 <body>
 
     <div id="motion_data">....</div>
-
+    <div id="prediction">....</div>
 </body>
 
 </html>

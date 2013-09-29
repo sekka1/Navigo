@@ -2,6 +2,16 @@
 <html><head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <script src=http://cdn.pubnub.com/pubnub-3.5.4.min.js ></script>
+
+    <script>(function(){
+        var pubnub = PUBNUB.init({
+            publish_key   : 'pub-c-68ea2e31-5344-44cd-915d-c22450e012d7',
+            subscribe_key : 'sub-c-93ec9a2e-2944-11e3-a434-02ee2ddab7fe'
+        });
+    })();</script>
+
     <title>Navigo</title>
 
     <link href='assets/css/gridism.css'

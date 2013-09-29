@@ -45,8 +45,7 @@
         <tr><td>Speed</td><td id="doSpeed"></td></tr>
         <tr><td>GeoTimestamp</td><td id="doGeoTimestamp"></td></tr>
         <tr><td>SocketServerResponse</td><td id="socketResponse">xxxxxxxx</td></tr>
-        <tr><td>The Data</td><td id="theData">Not Sure</td></tr>
-        <tr><td>Prediction</td><td id="prediction">Not Sure</td></tr>
+        <tr><td>Motion Prediction</td><td id="prediction">Not Sure</td></tr>
 
     </table>
     <h2>Device Motion</h2>
@@ -74,10 +73,18 @@
     </table>
 </div>
 <div class="container" style="-webkit-perspective: 300; perspective: 300;">
-    <img src="images/x.png" id="imgLogo" class="logo" width="400" height="110">
 </div>
 
-<script src="http://ws.algorithms.io:8080/socket.io/socket.io.js"></script>
+<script src="http://ws.algorithms.io/socket.io/socket.io.js"></script>
+<script src=http://cdn.pubnub.com/pubnub-3.5.4.min.js ></script>
+<script>(function(){
+    var pubnub = PUBNUB.init({
+        publish_key   : 'pub-c-68ea2e31-5344-44cd-915d-c22450e012d7',
+        subscribe_key : 'sub-c-93ec9a2e-2944-11e3-a434-02ee2ddab7fe'
+    });
+})();</script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 <script type="text/javascript">
 var count=0;
@@ -119,6 +126,16 @@ socket = io.connect('http://ws.algorithms.io');
 socket.on('event_save_motion_result', function(data) {
     $('#socketResponse').text(data.data);
 });
+// Results from the Random Forest Motion Prediction
+socket.on('algorithm_random_forest_rolling_samples_result', function(data){
+    $('#motionPrediction').text(data.data);
+});
+
+
+var pubnub = PUBNUB.init({
+    publish_key   : 'pub-c-68ea2e31-5344-44cd-915d-c22450e012d7',
+    subscribe_key : 'sub-c-93ec9a2e-2944-11e3-a434-02ee2ddab7fe'
+});
 
 
 // Saving Motion Event
@@ -139,11 +156,12 @@ window.setInterval(function(){
         'label': $('#input_label').val()
     });
     */
-    //$('#theData').text('accelx: ' + accelx + ' | accely: ' + accely + ' | accelz: ' + accelz + ' | gyroscope_x: ' + alpha.toFixed(1) + ' | gyroscope_y: ' + beta.toFixed(1) + ' | gyroscope_z: ' + gamma.toFixed(1) + ' | rotation_x: ' + rotationx.toFixed(1) + ' | rotation_y: ' + rotationy.toFixed(1) + ' | rotation_z: ' + rotationz.toFixed(1));
-    $('#theData').text( ' | gyroscope_x: ' + alpha.toFixed(1) + ' | gyroscope_y: ' + beta.toFixed(1) + ' | gyroscope_z: ' + gamma.toFixed(1) );
-    //console.log('accelx: ' + accelx + ' | accely: ' + accely + ' | accelz: ' + accelz + ' | gyroscope_x: ' + alpha.toFixed(1) + ' | gyroscope_y: ' + beta.toFixed(1) + ' | gyroscope_z: ' + gamma.toFixed(1) + ' | rotation_x: ' + rotationx.toFixed(1) + ' | rotation_y: ' + rotationy.toFixed(1) + ' | rotation_z' + rotationz.toFixed(1));
+    pubnub.publish({
+        channel : "navigo",
+        message : '{"gyroscope_x":'+alpha.toFixed(1)+',"gyroscope_y":'+beta.toFixed(1)+',"gyroscope_z":'+gamma.toFixed(1)+'}'
+    })
 
-    $('#prediction').text('....');
+    $('#prediction').text('...');
 
     if(  (gamma.toFixed(1) > 20 ) ){
         $('#prediction').text('right');
@@ -158,8 +176,26 @@ window.setInterval(function(){
         $('#prediction').text('down');
     }
 
-}, 250);
+}, 20);
 
+
+// Run Random Forest Motion Prediction
+/*
+ window.setInterval(function(){
+
+ $('#motionPrediction').text('Predicting....');
+
+ socket.emit('algorithm_random_forest_rolling_samples', {
+ 'authToken': '02cfc86d9992e822510318adebccb4d3',
+ 'device_id': 'live_prediction_iphone_1',
+ 'train': '3880',
+ 'dependentVariable': 'action'
+ });
+ }, 30000);
+ */
+
+
+//    }
 
 function deviceOrientationHandler(tiltLR,tiltFB,dir){
 
@@ -176,6 +212,33 @@ function deviceOrientationHandler(tiltLR,tiltFB,dir){
     logo.style.MozTransform="rotate("+tiltLR+"deg)";
     logo.style.transform="rotate("+tiltLR+"deg) rotate3d(1,0,0, "+(tiltFB*-1)+"deg)";
 
+//        socket.emit('algorithm_random_forest', {	'algorithmPath': '/jobs/swagger/54',
+//            'authToken': '02cfc86d9992e822510318adebccb4d3',
+//            'method': 'sync',
+//            'outputType': 'json',
+//            'train': '3843',
+//            'test': '{"Gyroscope.X":' + tiltLR.toFixed(1) + ',"Gyroscope.Y":' + tiltFB.toFixed(1) + ',"Gyroscope.Z":' + dir.toFixed(1) + '}',
+//            'dependentVariable': 'action'
+
+    /*
+     document.getElementById("socketResponse").text(".......");
+     socket.emit('algorithm_random_forest', {	'algorithmPath': '/jobs/swagger/54',
+     'authToken': '02cfc86d9992e822510318adebccb4d3',
+     'method': 'sync',
+     'outputType': 'json',
+     'train': '3843',
+     'test': '{"Accelerometer.X":-5.6,"Accelerometer.Y":-2.5,"Accelerometer.Z":3.7,"Gyroscope.X":-84.2,"Gyroscope.Y":-132.2,"Gyroscope.Z":-80}',
+     'dependentVariable': 'action'
+     });
+     */
+    //alert('goooo');
+
+
+//        socket.on('algorithms_io_api', function (data) {
+////            $('#algorithms_io_result').text('Random Forest Result: ' + data.data);
+//            document.getElementById("socketResponse").text(data.data);
+//        });
+//        document.getElementById("doLat").innerHTML = "Sent message at " + (new Date()).getTime();
 }
 
 function deviceMotionHandler(eventData) {

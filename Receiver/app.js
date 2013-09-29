@@ -10,7 +10,7 @@ require([
     'assets/more/transparency.min.js',
     'bind.js',
     'con.js',
-    'http://ws.algorithms.io/socket.io/socket.io.js'
+    'http://cdn.pubnub.com/pubnub-3.5.4.min.js'
 	], function () {
 	 bindInit()
 

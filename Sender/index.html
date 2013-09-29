@@ -156,27 +156,37 @@ window.setInterval(function(){
         'label': $('#input_label').val()
     });
     */
-    pubnub.publish({
-        channel : "navigo",
-        message : '{"gyroscope_x":'+alpha.toFixed(1)+',"gyroscope_y":'+beta.toFixed(1)+',"gyroscope_z":'+gamma.toFixed(1)+'}'
-    })
+
+    var prediction = 'none';
 
     $('#prediction').text('...');
 
     if(  (gamma.toFixed(1) > 20 ) ){
-        $('#prediction').text('right');
+        //$('#prediction').text('right');
+        prediction = 'right';
     }
     if( (gamma.toFixed(1) < -20 ) ){
-        $('#prediction').text('left');
+        //$('#prediction').text('left');
+        prediction = 'left';
     }
     if( (beta.toFixed(1) > 40 ) ){
-        $('#prediction').text('up');
+        //$('#prediction').text('up');
+        prediction = 'up';
     }
     if( (beta.toFixed(1) < 15 ) ){
-        $('#prediction').text('down');
+        //$('#prediction').text('down');
+        prediction = 'down';
     }
 
-}, 20);
+    $('#prediction').text(prediction);
+
+
+    pubnub.publish({
+        channel : "navigo",
+        message : '{"gyroscope_x":'+alpha.toFixed(1)+',"gyroscope_y":'+beta.toFixed(1)+',"gyroscope_z":'+gamma.toFixed(1)+',"motion":"'+prediction+'"}'
+    })
+
+}, 1000);
 
 
 // Run Random Forest Motion Prediction

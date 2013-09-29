@@ -33,32 +33,48 @@ function conInit() {
         channel : "navigo",
         message : function(m){
 
-            //console.log(m);
+            console.log(m);
             var obj = eval ("(" + m + ")");
 
             //console.log(m);
-            console.log(obj.gyroscope_x);
+            //console.log(obj.gyroscope_x + ' - ' + obj.gyroscope_y + ' - ' + obj.gyroscope_z);
+            console.log(obj.motion);
 
+            if(obj.motion=='right'){
+                onRight();
+            }
+            if(obj.motion=='left'){
+                onLeft();
+            }
+            if(obj.motion=='up'){
+                onUp();
+            }
+            if(obj.motion=='down'){
+                onDown();
+            }
+
+            /*
             if(  (obj.gyroscope_z > 20 ) ){
                 //$('#prediction').text('right');
                 console.log('right');
-                onRight();
+                //onRight();
             }
-            if( (obj.gyroscope_z < -20 ) ){
+            else if( (obj.gyroscope_z < -20 ) ){
                 //$('#prediction').text('left');
                 console.log('left');
-                onLeft();
+                //onLeft();
             }
-            if( (obj.gyroscope_y > 40 ) ){
+            else if( (obj.gyroscope_y > 40 ) ){
                 //$('#prediction').text('up');
                 console.log('up');
-                onUp();
+                //onUp();
             }
-            if( (obj.gyroscope_y < 15 ) ){
+            else if( (obj.gyroscope_y < 15 ) ){
                 //$('#prediction').text('down');
                 console.log('down');
-                onDown();
+                //onDown();
             }
+            */
 
         }
         //connect : publish

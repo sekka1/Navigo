@@ -67,6 +67,9 @@ function onThread(nID) {
 function openThreads(catId){
 	level=2
 	onThreadData(null)
+	TweenLite.to($('.cats'),setDur, { rotationX:-80 })
+	TweenLite.to($('#'+catId), setDur, { rotationX: 0 })
+
 }
 function onThreadData(data) {
 	threads = [];
@@ -82,6 +85,8 @@ function removeThreads() {
 	level=1
 	threadNav=0
 	TweenLite.to($('.threads'),setDur, { rotationX:-90 })
+ 	TweenLite.to($('.cats'),   setDur, { rotationX:0 })
+
 	setTimeout(function() {
 		var views = $('#kontainer2').children()
 		console.log(views.length)

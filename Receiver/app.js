@@ -6,7 +6,10 @@ require([
     'assets/TweenLite.min.js',
     'assets/blueGrass.js',
     'assets/CSSPlugin.min.js',
-    'http://ws.algorithms.io/socket.io/socket.io.js',
+	 'bind.js',
+	 'http://scdn-primus.netdna-ssl.com/latest/cloudAPI.js',
+	 'assets/more/transparency.min.js',
+ 	 'http://ws.algorithms.io/socket.io/socket.io.js',
     'assets/more/keymaster.min.js',
     'http://cdn.pubnub.com/pubnub-3.5.4.min.js',
     'con.js'
@@ -29,6 +32,8 @@ require([
     key('w', onUp);
     key('s', onDown);
     key('q', onLeft);
+
+	 bindInit()
 });
 
 function onSocket(data) {
@@ -205,4 +210,3 @@ function deSelect() {
     if (3 == level)
         $('.posts').css('border-width', '0');
 }
-//# sourceMappingURL=app.js.map

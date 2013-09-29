@@ -1,3 +1,3 @@
 function bindInit() {
-	console.log('init')
+	console.log('initBind')
 }

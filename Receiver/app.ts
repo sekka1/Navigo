@@ -2,7 +2,7 @@ declare var key;
 declare var $;
 declare var TweenLite;
 declare var forward2;
-console.log('loaded v02')
+console.log('loaded v03')
 //document.body.style.cursor = 'wait'
 require(['assets/jquery-2.1.b1.js'
 		,'assets/TweenLite.min.js'
@@ -48,13 +48,6 @@ function onCat(nID) {
 	TweenLite.from(card,setDur, { rotationX:-40 })
 	TweenLite.to(card,setDur, { scaleX:.8, scaleY:.8 })
 }
-function onThread(nID) {
-	threads.push(nID)
-	var card = document.getElementById(nID)
-	TweenLite.from(card,setDur, { rotationX:-40 })
-	TweenLite.to(card,setDur, { scaleX:.8, scaleY:.8 })
-}
-
 function openCats() {
 	var list = ["Sports","Politics", "Kardashians"];
 	for (var i = 0; i < list.length; i++) {
@@ -64,7 +57,14 @@ function openCats() {
 		select(categories[0])
 	},400)
 }
-function openThread(catId){
+
+function onThread(nID) {
+	threads.push(nID)
+	var card = document.getElementById(nID)
+	TweenLite.from(card,setDur, { rotationX:-40 })
+	TweenLite.to(card,setDur, { scaleX:.8, scaleY:.8 })
+}
+function openThreads(catId){
 	level=2
 	onThreadData(null)
 }
@@ -76,9 +76,8 @@ function onThreadData(data) {
 	}
 	setTimeout(function() {
 		select(threads[0])
-	},400)
+	},100)
 }
-
 function removeThreads() {
 	level=1
 
@@ -88,6 +87,38 @@ function removeThreads() {
 		var old = views.get(0)
 		old.parentNode.removeChild(old)
 		views = $('#kontainer2').children()
+	}
+}
+
+function onPost(nID) {
+	posts.push(nID)
+	var card = document.getElementById(nID)
+	TweenLite.from(card,setDur, { rotationX:-40 })
+	TweenLite.to(card,setDur, { scaleX:.8, scaleY:.8 })
+}
+function openPosts(threadId){
+	level=3
+	onPostData(null)
+}
+function onPostData(data) {
+	posts = [];
+	var list = ["Sports","Politics", "Kardashians"];
+	for (var i = 0; i < list.length; i++) {
+		forward2('post','kontainer3','post',onPost)
+	}
+	setTimeout(function() {
+		select(posts[0])
+	},100)
+}
+function removePosts() {
+	level=2
+
+	var views = $('#kontainer3').children()
+	console.log(views.length)
+	while (views.length > 0) {
+		var old = views.get(0)
+		old.parentNode.removeChild(old)
+		views = $('#kontainer3').children()
 	}
 }
 
@@ -101,10 +132,10 @@ function onDown() {
 	deSelect()
 	if(1==level)
 		select(categories[++catNav])
-
 	if(2==level)
 		select(threads[++threadNav])
-
+	if(3==level)
+		select(posts[++postNav])
 }
 function onUp() {
 	console.log('up')
@@ -117,10 +148,20 @@ function onUp() {
 		--threadNav
 		select(threads[threadNav])
 	}
+	if(3==level) {
+		--postNav
+		select(threads[postNav])
+	}
 }
+
 function onRight() {
-	console.log('right')
-	openThread(categories[catNav])
+	console.log('right'+level)
+	if(1==level) {
+		openThreads(categories[catNav])
+		return
+	}
+	if(2==level)
+		openPosts(threads[threadNav])
 }
 function onLeft() {
 	console.log('left')
@@ -139,5 +180,7 @@ function deSelect() {
 		$('.cats').css('border-width', '0');
 	if(2==level)
 		$('.threads').css('border-width', '0');
+	if(3==level)
+		$('.posts').css('border-width', '0');
 }
 

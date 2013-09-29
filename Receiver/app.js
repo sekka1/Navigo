@@ -173,9 +173,9 @@ function onLeft() {
 function select(id) {
     console.log(id);
     $('html, body').animate({
-        scrollTop: $('#' + id).offset().top
-    }, 600);
-    $('#' + id).css('border', '3px solid black');
+        scrollTop: $('#' + id).offset().top - 50
+    }, 400);
+    $('#' + id).css('border', '10px solid white');
 }
 function deSelect() {
     if (1 == level)

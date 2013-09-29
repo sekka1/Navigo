@@ -37,6 +37,10 @@ body {
   width: 100%;
   background-size: 100%;
 }
+.cards {
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+}
 .navbar {
   border-radius: 0;
   background-color: #b4bcc2;

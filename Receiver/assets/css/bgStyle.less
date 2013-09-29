@@ -48,7 +48,7 @@
 @font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @line-height:        1rem;
-@border-radius:      4px;
+@border-radius:      14px;
 
 @navbar-height:      60px;
 
@@ -70,7 +70,11 @@ body {
 	background-size: 100%;
 
 }
+.cards {
+	border-radius:@border-radius;
+	-webkit-border-radius: @border-radius;
 
+}
 // nav
 .navbar {
   border-radius: 0;
@@ -96,7 +100,6 @@ body {
   top:@navbar-height;
   border-right: 1px solid black;
 }
-
 
 
 img {

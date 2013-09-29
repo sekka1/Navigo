@@ -164,4 +164,3 @@ else if (window.XDomainRequest)
 else
         return false;
 }
-//# sourceMappingURL=blueGrass.js.map

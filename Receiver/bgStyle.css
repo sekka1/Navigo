@@ -29,7 +29,7 @@ body {
   color: #18bc9c;
   -webkit-font-smoothing: antialiased;
   font-size: 1.5rem;
-  background: url(back.jpeg) center top fixed;
+  background: url(assets/css/back.jpeg) center top fixed;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;

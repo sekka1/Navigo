@@ -52,7 +52,7 @@ function openCats() {
     }
     setTimeout(function () {
         select(categories[0]);
-    }, 400);
+    }, 100);
 }
 
 function onThread(nID) {
@@ -78,14 +78,16 @@ function onThreadData(data) {
 function removeThreads() {
     level = 1;
     threadNav = 0;
-
-    var views = $('#kontainer2').children();
-    console.log(views.length);
-    while (views.length > 0) {
-        var old = views.get(0);
-        old.parentNode.removeChild(old);
-        views = $('#kontainer2').children();
-    }
+    TweenLite.to($('.threads'), setDur, { rotationX: -90 });
+    setTimeout(function () {
+        var views = $('#kontainer2').children();
+        console.log(views.length);
+        while (views.length > 0) {
+            var old = views.get(0);
+            old.parentNode.removeChild(old);
+            views = $('#kontainer2').children();
+        }
+    }, 400);
 }
 
 function onPost(nID) {
@@ -111,14 +113,16 @@ function onPostData(data) {
 }
 function removePosts() {
     level = 2;
-
-    var views = $('#kontainer3').children();
-    console.log(views.length);
-    while (views.length > 0) {
-        var old = views.get(0);
-        old.parentNode.removeChild(old);
-        views = $('#kontainer3').children();
-    }
+    TweenLite.to($('.posts'), setDur, { rotationX: -90 });
+    setTimeout(function () {
+        var views = $('#kontainer3').children();
+        console.log(views.length);
+        while (views.length > 0) {
+            var old = views.get(0);
+            old.parentNode.removeChild(old);
+            views = $('#kontainer3').children();
+        }
+    }, 400);
 }
 
 // NAV: ********************************

@@ -6,19 +6,19 @@ require([
     'assets/TweenLite.min.js',
     'assets/blueGrass.js',
     'assets/CSSPlugin.min.js',
+    'http://ws.algorithms.io/socket.io/socket.io.js',
     'assets/more/keymaster.min.js',
-    'assets/more/transparency.min.js',
-    'bind.js',
-    'con.js',
     'http://cdn.pubnub.com/pubnub-3.5.4.min.js'
-	], function () {
-	 bindInit()
-
+], function () {
     CSSPlugin.defaultTransformPerspective = 500;
     viewDir = 'view/';
-	 openCats();
+    openCats();
 
-	 conInit()
+    // sock *****************************
+    //var socket = io.connect('http://ws.algorithms.io')
+    setTimeout(function () {
+        //socket.on('query_get_last_motion_data', onSocket)
+    }, 500);
 
     //nav *****************************
     key('d', onRight);
@@ -44,7 +44,7 @@ function onCat(nID) {
     categories.push(nID);
     var card = document.getElementById(nID);
     TweenLite.from(card, setDur, { rotationX: -40 });
-    TweenLite.to(card, setDur, { scaleX: .8, scaleY: .8 });
+    //TweenLite.to(card, setDur, {y:25});
 }
 function openCats() {
     var list = ["Sports", "Politics", "Kardashians"];
@@ -60,13 +60,15 @@ function onThread(nID) {
     threads.push(nID);
     var card = document.getElementById(nID);
     TweenLite.from(card, setDur, { rotationX: -40 });
-    TweenLite.to(card, setDur, { scaleX: .8, scaleY: .8 });
+    //TweenLite.to(card, setDur, { y: 100 });
 }
 function openThreads(catId) {
     level = 2;
     onThreadData(null);
-    TweenLite.to($('.cats'), setDur, { rotationX: -80 });
-    TweenLite.to($('#' + catId), setDur, { rotationX: 0 });
+    //ROTATE ALL CAT CARDS
+    TweenLite.to($('.cats'), setDur, { rotationX: -80 , rotationY: -30, scaleX: .8, scaleY: .8});
+    //BUT UNROTATE THE FOCUS CAT CARD
+    TweenLite.to($('#' + catId), setDur, { rotationX: 0, rotationY: -30, scaleX: 1, scaleY: 1});
 }
 function onThreadData(data) {
     threads = [];
@@ -81,8 +83,8 @@ function onThreadData(data) {
 function removeThreads() {
     level = 1;
     threadNav = 0;
-    TweenLite.to($('.threads'), setDur, { rotationX: -90 });
-    TweenLite.to($('.cats'), setDur, { rotationX: 0 });
+    TweenLite.to($('.threads'), setDur, { rotationX: -90, scaleX:.8, scaleY:.8});
+    TweenLite.to($('.cats'), setDur, { rotationX: 0 , rotationY: 0, scaleX:1, scaleY:1});
 
     setTimeout(function () {
         var views = $('#kontainer2').children();
@@ -99,14 +101,15 @@ function onPost(nID) {
     posts.push(nID);
     var card = document.getElementById(nID);
     TweenLite.from(card, setDur, { rotationX: -40 });
-    TweenLite.to(card, setDur, { scaleX: .8, scaleY: .8 });
+    //TweenLite.to(card, setDur, { scaleX: .8, scaleY: .8 });
 }
 function openPosts(threadId) {
     level = 3;
     postNav = 0;
     onPostData(null);
-    TweenLite.to($('.threads'), setDur, { rotationX: -80 });
-    TweenLite.to($('#' + threadId), setDur, { rotationX: 0 });
+    TweenLite.to($('.cats'), setDur, { rotationY: -60 });
+    TweenLite.to($('.threads'), setDur, { rotationX: -80 , rotationY: -30, scaleX:.8, scaleY:.8, x:-50});
+    TweenLite.to($('#' + threadId), setDur, { rotationX: 0 , rotationY: -30, scaleX:1, scaleY:1, x:-50});
 }
 function onPostData(data) {
     posts = [];
@@ -120,8 +123,9 @@ function onPostData(data) {
 }
 function removePosts() {
     level = 2;
-    TweenLite.to($('.posts'), setDur, { rotationX: -90 });
-    TweenLite.to($('.threads'), setDur, { rotationX: 0 });
+    TweenLite.to($('.cats'), setDur, { rotationY: -30 });
+    TweenLite.to($('.posts'), setDur, { rotationX: -90 , scaleX:.8, scaleY:.8});
+    TweenLite.to($('.threads'), setDur, { rotationX: 0, rotationY: 0, scaleX:1, scaleY:1,x:0});
 
     setTimeout(function () {
         var views = $('#kontainer3').children();
@@ -188,7 +192,7 @@ function select(id) {
     $('html, body').animate({
         scrollTop: $('#' + id).offset().top - 50
     }, 400);
-    $('#' + id).css('border', '4px solid white');
+    $('#' + id).css({"box-sizing":"border-box","-moz-box-sizing":"border-box","-webkit-box-sizing":"border-box","border-color": "#A7DBD8","border-width":"4px","border-style":"solid"});
 }
 function deSelect() {
     if (1 == level)
@@ -198,3 +202,4 @@ function deSelect() {
     if (3 == level)
         $('.posts').css('border-width', '0');
 }
+//# sourceMappingURL=app.js.map

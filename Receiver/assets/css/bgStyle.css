@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(//scdn.primus.netdna-cdn.com/latest/css/lato/lato-regular-webfont.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(//scdn.primus.netdna-cdn.com/latest/css/lato/lato-bold-webfont.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(//scdn.primus.netdna-cdn.com/latest/css/lato/lato-black-webfont.woff) format('woff');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'), url(//scdn.primus.netdna-cdn.com/latest/css/lato/lato-italic-webfont.woff) format('woff');
+}
+body {
+    background-color: #ecf0f1;
+    height: 100% ;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1em;
+    background: url(back.jpeg) center top fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    width: 1005;
+    background-size: 100%;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-right:47px;
+    padding-left:47px;
+}
+h1 {
+    /*height: 100% ;*/
+    margin-top:0; padding-top:0;
+    margin-bottom: 0; padding-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    color: #FA6900;
+}
+h2 {
+    /*height: 100% ;*/
+    margin-top:0; padding-top:0;
+    margin-bottom: 0; padding-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: #FA6900;
+}
+h3 {
+    /*height: 100% ;*/
+    margin-top:0; padding-top:0;
+    margin-bottom: 0; padding-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #69D2E7;
+}
+.cards {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    box-shadow: 2px 2px 1px #999;
+    background-color: #FFFFFF;
+    border-color:#E0E4CC;
+    width: 290px;
+    margin-bottom:25px;
+}
+.cards-content{
+    padding-top:25px;
+    padding-right:25px;
+    padding-left:25px;
+    vertical-align:middle;
+}
+.left-third{
+    position: absolute;
+    width:290px;
+    left:47px;
+}
+.middle-third{
+    position: absolute;
+    width:290px;
+    left:367px;
+}
+.right-third{
+    position: absolute;
+    width:290px;
+    left:687px;
+}
+.navbar {
+    border-radius: 0;
+    background-color: #b4bcc2;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+}
+#slider,
+.leftSideNav {
+    background: #95a5a6;
+    color: black;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    font-size: 2rem;
+    position: fixed;
+    height: 100%;
+    width: 400px;
+    left: -409px;
+    top: 60px;
+    border-right: 1px solid black;
+}
+img {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;
+}

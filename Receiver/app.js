@@ -24,7 +24,7 @@ require([
     key('a', onLeft);
     key('w', onUp);
     key('s', onDown);
-    key('q', onUp);
+    key('q', onLeft);
 });
 
 function onSocket(data) {

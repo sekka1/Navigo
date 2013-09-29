@@ -27,7 +27,7 @@ require(['assets/jquery-2.1.b1.js'
 			key('a',onLeft)
 			key('w',onUp)
 			key('s',onDown)
-			key('q',onUp)//TODO
+			key('q',onLeft)//TODO: reset
 })//loaded
 
 function onSocket(data) {

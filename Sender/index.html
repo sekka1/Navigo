@@ -45,7 +45,8 @@
         <tr><td>Speed</td><td id="doSpeed"></td></tr>
         <tr><td>GeoTimestamp</td><td id="doGeoTimestamp"></td></tr>
         <tr><td>SocketServerResponse</td><td id="socketResponse">xxxxxxxx</td></tr>
-        <tr><td>Motion Prediction</td><td id="motionPrediction">Not Sure</td></tr>
+        <tr><td>The Data</td><td id="theData">Not Sure</td></tr>
+        <tr><td>Prediction</td><td id="prediction">Not Sure</td></tr>
 
     </table>
     <h2>Device Motion</h2>
@@ -123,6 +124,7 @@ socket.on('event_save_motion_result', function(data) {
 // Saving Motion Event
 window.setInterval(function(){
 
+    /*
     socket.emit('event_save_motion', {'authToken': '02cfc86d9992e822510318adebccb4d3',
         'accelerometer_x': accelx,
         'accelerometer_y': accely,
@@ -136,7 +138,27 @@ window.setInterval(function(){
         'device_id': 'navigo',
         'label': $('#input_label').val()
     });
-}, 20);
+    */
+    //$('#theData').text('accelx: ' + accelx + ' | accely: ' + accely + ' | accelz: ' + accelz + ' | gyroscope_x: ' + alpha.toFixed(1) + ' | gyroscope_y: ' + beta.toFixed(1) + ' | gyroscope_z: ' + gamma.toFixed(1) + ' | rotation_x: ' + rotationx.toFixed(1) + ' | rotation_y: ' + rotationy.toFixed(1) + ' | rotation_z: ' + rotationz.toFixed(1));
+    $('#theData').text( ' | gyroscope_x: ' + alpha.toFixed(1) + ' | gyroscope_y: ' + beta.toFixed(1) + ' | gyroscope_z: ' + gamma.toFixed(1) );
+    //console.log('accelx: ' + accelx + ' | accely: ' + accely + ' | accelz: ' + accelz + ' | gyroscope_x: ' + alpha.toFixed(1) + ' | gyroscope_y: ' + beta.toFixed(1) + ' | gyroscope_z: ' + gamma.toFixed(1) + ' | rotation_x: ' + rotationx.toFixed(1) + ' | rotation_y: ' + rotationy.toFixed(1) + ' | rotation_z' + rotationz.toFixed(1));
+
+    $('#prediction').text('....');
+
+    if(  (gamma.toFixed(1) > 20 ) ){
+        $('#prediction').text('right');
+    }
+    if( (gamma.toFixed(1) < -20 ) ){
+        $('#prediction').text('left');
+    }
+    if( (beta.toFixed(1) > 40 ) ){
+        $('#prediction').text('up');
+    }
+    if( (beta.toFixed(1) < 15 ) ){
+        $('#prediction').text('down');
+    }
+
+}, 250);
 
 
 function deviceOrientationHandler(tiltLR,tiltFB,dir){

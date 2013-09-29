@@ -10,7 +10,7 @@ var bG = (function () {
 
 var viewDir;
 
-console.log('blueGrass v905');
+console.log('blueGrass x905');
 
 /**
 * @param ht view
@@ -26,6 +26,20 @@ function open(ht, elSel, cb_) {
         showSpinner(false);
         if (cb_)
             cb_();
+    });
+}
+
+function forward2(ht, elSel, id, cb_) {
+    showSpinner(true);
+    $.get(viewDir + ht + '.html', function (resp_) {
+        $('#' + elSel).append(resp_);
+        showSpinner(false);
+        var cur = $('#' + id);
+        console.log(ht, cur.attr('id'));
+        var gid = id + Math.floor(Math.random() * 9999999);
+        cur.attr('id', gid);
+        if (cb_)
+            cb_(gid);
     });
 }
 
@@ -150,4 +164,3 @@ else if (window.XDomainRequest)
 else
         return false;
 }
-//# sourceMappingURL=blueGrass.js.map

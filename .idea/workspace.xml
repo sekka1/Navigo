@@ -2,7 +2,112 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a04ab0b-c754-4c96-9fc1-e5be2997d824" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sender/index.html" afterPath="$PROJECT_DIR$/Sender/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/back.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/bind.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/view/cat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/con.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/css/gridism.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/assets/more/keymaster.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/view/post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Receiver/view/thread.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/app.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/app.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/blueGrass.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/blueGrass.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/bgStyle.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/flat-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/flat-ui.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.dev.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/Flat-UI-Icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/fonts/icomoon-session.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/footer/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Clipboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Compas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Gift-Box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Infinity-Loop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Pensils.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Pocket.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Retina-Ready.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Toilet-Paper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/png/Watches.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/book.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/chat.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/clipboard.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/clocks.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/compas.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/gift-box.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/loop.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/map.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/paper-bag.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/pencils.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/retina.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/icons/svg/toilet-paper.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/login/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/login/imac-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/login/imac.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/switch/mask-square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/switch/mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/tile/ribbon-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/tile/ribbon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/done-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/done.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/search-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/todo-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/todo/todo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/fullscreen-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/fullscreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/pause-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/pause.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/play-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/poster.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-full-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-full.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-off-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flat-ui/images/video/volume-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/bootswatch.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/bootswatch.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/variables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/flaty/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/fuelUX.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/fuelux-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/fuelux-responsive.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/img/form.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Receiver/assets/css/fuelUX/img/glyphicons-halflings.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Receiver/assets/css/bgStyle.css" afterPath="$PROJECT_DIR$/Receiver/bgStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Receiver/app.js" afterPath="$PROJECT_DIR$/Receiver/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Receiver/assets/blueGrass.js" afterPath="$PROJECT_DIR$/Receiver/assets/blueGrass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Receiver/index.html" afterPath="$PROJECT_DIR$/Receiver/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Navigo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +135,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sender/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="0" selection-start="6309" selection-end="6309" vertical-scroll-proportion="0.21370968">
+            <state line="153" column="69" selection-start="6509" selection-end="6509" vertical-scroll-proportion="0.5766129">
               <folding />
             </state>
           </provider>
@@ -299,23 +404,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Receiver/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Receiver/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="43" selection-start="501" selection-end="501" vertical-scroll-proportion="0.37648612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Receiver/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.019206146">
           <folding />
         </state>
       </provider>
@@ -329,7 +420,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sender/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="0" selection-start="6309" selection-end="6309" vertical-scroll-proportion="0.21370968">
+        <state line="153" column="69" selection-start="6509" selection-end="6509" vertical-scroll-proportion="0.5766129">
           <folding />
         </state>
       </provider>

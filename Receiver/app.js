@@ -104,6 +104,8 @@ function openPosts(threadId) {
     level = 3;
     postNav = 0;
     onPostData(null);
+    TweenLite.to($('.threads'), setDur, { rotationX: -80 });
+    TweenLite.to($('#' + threadId), setDur, { rotationX: 0 });
 }
 function onPostData(data) {
     posts = [];
@@ -118,6 +120,8 @@ function onPostData(data) {
 function removePosts() {
     level = 2;
     TweenLite.to($('.posts'), setDur, { rotationX: -90 });
+    TweenLite.to($('.threads'), setDur, { rotationX: 0 });
+
     setTimeout(function () {
         var views = $('#kontainer3').children();
         console.log(views.length);
@@ -183,7 +187,7 @@ function select(id) {
     $('html, body').animate({
         scrollTop: $('#' + id).offset().top - 50
     }, 400);
-    $('#' + id).css('border', '10px solid white');
+    $('#' + id).css('border', '4px solid white');
 }
 function deSelect() {
     if (1 == level)

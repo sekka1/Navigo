@@ -62,7 +62,7 @@ function onThread(nID) {
 	threads.push(nID)
 	var card = document.getElementById(nID)
 	TweenLite.from(card,setDur, { rotationX:-40 })
-	TweenLite.to(card,setDur, { scaleX:.8, scaleY:.8 })
+	TweenLite.to(card,  setDur, { scaleX:.8, scaleY:.8 })
 }
 function openThreads(catId){
 	level=2
@@ -108,6 +108,8 @@ function openPosts(threadId){
 	level=3
 	postNav=0
 	onPostData(null)
+	TweenLite.to($('.threads'),setDur, { rotationX:-80 })
+	TweenLite.to($('#'+threadId), setDur, { rotationX: 0 })
 }
 function onPostData(data) {
 	posts = [];
@@ -122,6 +124,8 @@ function onPostData(data) {
 function removePosts() {
 	level=2
 	TweenLite.to($('.posts'),setDur, { rotationX:-90 })
+	TweenLite.to($('.threads'),setDur, { rotationX:0 })
+
 	setTimeout(function() {
 		var views = $('#kontainer3').children()
 		console.log(views.length)
@@ -187,7 +191,7 @@ function select(id) {
 	$('html, body').animate({
 		scrollTop: $('#'+id).offset().top -50
 		},400);
-	$('#'+id).css('border', '10px solid white');
+	$('#'+id).css('border', '4px solid white');
 }
 function deSelect() {
 	if(1==level)

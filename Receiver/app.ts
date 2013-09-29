@@ -1,6 +1,7 @@
 declare var key;
 declare var $;
 declare var TweenLite;
+declare var forward2;
 console.log('loaded v02')
 //document.body.style.cursor = 'wait'
 require(['assets/jquery-2.1.b1.js'
@@ -23,9 +24,7 @@ require(['assets/jquery-2.1.b1.js'
 
 			//nav *****************************
 			key('d',onRight)
-			key('a',function(){
-				console.log('left')
-			})
+			key('a',onLeft)
 			key('w',onUp)
 			key('s',onDown)
 			key('q',onUp)//TODO
@@ -67,7 +66,7 @@ function openCats() {
 }
 function openThread(catId){
 	level=2
-	onThreadData()
+	onThreadData(null)
 }
 function onThreadData(data) {
 	threads = [];
@@ -78,6 +77,18 @@ function onThreadData(data) {
 	setTimeout(function() {
 		select(threads[0])
 	},400)
+}
+
+function removeThreads() {
+	level=1
+
+	var views = $('#kontainer2').children()
+	console.log(views.length)
+	while (views.length > 0) {
+		var old = views.get(0)
+		old.parentNode.removeChild(old)
+		views = $('#kontainer2').children()
+	}
 }
 
 // NAV: ********************************
@@ -110,6 +121,10 @@ function onUp() {
 function onRight() {
 	console.log('right')
 	openThread(categories[catNav])
+}
+function onLeft() {
+	console.log('left')
+	removeThreads()
 }
 
 function select(id) {

@@ -40,20 +40,6 @@ body {
   border-bottom: 1px solid black;
   font-size: 2rem;
 }
-.navbar-header {
-  float: right;
-}
-.navbar-brand {
-  color: white !important;
-  font-size: 3rem;
-}
-.navTxt {
-  color: white !important;
-  font-size: 2rem;
-}
-.navbar-toggle {
-  margin-left: 1rem ;
-}
 #slider,
 .leftSideNav {
   background: #95a5a6;
@@ -67,14 +53,6 @@ body {
   left: -409px;
   top: 60px;
   border-right: 1px solid black;
-}
-.jumbotron {
-  background-color: #ecf0f1;
-}
-@media (max-width: 767px) {
-  .jumbotron h1 {
-    font-size: 2rem;
-  }
 }
 img {
   max-width: 100%;

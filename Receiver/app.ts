@@ -80,6 +80,7 @@ function onThreadData(data) {
 }
 function removeThreads() {
 	level=1
+	threadNav=0
 
 	var views = $('#kontainer2').children()
 	console.log(views.length)
@@ -98,6 +99,7 @@ function onPost(nID) {
 }
 function openPosts(threadId){
 	level=3
+	postNav=0
 	onPostData(null)
 }
 function onPostData(data) {
@@ -150,7 +152,7 @@ function onUp() {
 	}
 	if(3==level) {
 		--postNav
-		select(threads[postNav])
+		select(posts[postNav])
 	}
 }
 
@@ -165,7 +167,10 @@ function onRight() {
 }
 function onLeft() {
 	console.log('left')
-	removeThreads()
+	if(2==level)
+		removeThreads()
+	if(3==level)
+		removePosts()
 }
 
 function select(id) {

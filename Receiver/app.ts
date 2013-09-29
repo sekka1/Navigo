@@ -9,24 +9,25 @@ require(['assets/jquery-2.1.b1.js'
 	,'assets/CSSPlugin.min.js'   // Tween animation plugin
 	,'http://ws.algorithms.io/socket.io/socket.io.js'
 	,'assets/more/keymaster.min.js'
-	], function() { // we loaded:
-		CSSPlugin.defaultTransformPerspective = 500;
-		openCats()
+	]
+		, function() { // we loaded:
+			CSSPlugin.defaultTransformPerspective = 500;
+			openCats()
 
-		// sock *****************************
-		//var socket = io.connect('http://ws.algorithms.io')
-		setTimeout(function(){
-				//socket.on('query_get_last_motion_data', onSocket)
-			},500)
+			// sock *****************************
+			//var socket = io.connect('http://ws.algorithms.io')
+			setTimeout(function(){
+					//socket.on('query_get_last_motion_data', onSocket)
+				},500)
 
-		//nav *****************************
-		key('d',onRight)
-		key('a',function(){
-			console.log('left')
-		})
-		key('w',onUp)
-		key('s',onDown)
-		key('q',onUp)
+			//nav *****************************
+			key('d',onRight)
+			key('a',function(){
+				console.log('left')
+			})
+			key('w',onUp)
+			key('s',onDown)
+			key('q',onUp)//TODO
 })//loaded
 
 function onSocket(data) {
@@ -41,35 +42,54 @@ viewDir = 'view/'
 var categories  = [];
 var threads = [];
 var posts = [];
-var level:number=1;
-var catPos:number=1;
-function onCard(nID) {
-	//console.log(nID)
+
+function onCat(nID) {
 	categories.push(nID)
-	catPos++
+	var card = document.getElementById(nID)
+	TweenLite.from(card,setDur, { rotationX:-40 })
+	TweenLite.to(card,setDur, { scaleX:.8, scaleY:.8 })
+}
+function onThread(nID) {
+	threads.push(nID)
 	var card = document.getElementById(nID)
 	TweenLite.from(card,setDur, { rotationX:-40 })
 	TweenLite.to(card,setDur, { scaleX:.8, scaleY:.8 })
 }
 
-
 function openCats() {
 	var list = ["Sports","Politics", "Kardashians"];
 	for (var i = 0; i < list.length; i++) {
-		forward('cat','cat',onCard)
+		forward2('cat','kontainer1','cat',onCat)
 	}
 	setTimeout(function() {
 		select(categories[0])
-	},600)
+	},400)
+}
+function openThread(catId){
+	onThreadData()
+}
+function onThreadData(data) {
+	threads = [];
+	var list = ["Sports","Politics", "Kardashians"];
+	for (var i = 0; i < list.length; i++) {
+		forward('thread','kontainer2','thread',onThread)
+	}
+	setTimeout(function() {
+		select(threads[0])
+	},400)
 }
 
+
+// NAV: ********************************
+var level:number=1; // cat, thread, post
 var catNav=0
+var threadNav=0
+var postNav=0
 function onDown() {
 	console.log('down')
 	deSelectAll()
 	select(categories[++catNav])
 }
-
 function onUp() {
 	console.log('up')
 	deSelectAll()
@@ -78,6 +98,7 @@ function onUp() {
 }
 function onRight() {
 	console.log('right')
+	openThread(categories[catNav])
 }
 
 function select(id) {

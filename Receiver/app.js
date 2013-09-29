@@ -40,12 +40,15 @@ viewDir = 'view/';
 var categories = [];
 var threads = [];
 var posts = [];
-var level = 1;
-var catPos = 1;
-function onCard(nID) {
-    //console.log(nID)
+
+function onCat(nID) {
     categories.push(nID);
-    catPos++;
+    var card = document.getElementById(nID);
+    TweenLite.from(card, setDur, { rotationX: -40 });
+    TweenLite.to(card, setDur, { scaleX: .8, scaleY: .8 });
+}
+function onThread(nID) {
+    threads.push(nID);
     var card = document.getElementById(nID);
     TweenLite.from(card, setDur, { rotationX: -40 });
     TweenLite.to(card, setDur, { scaleX: .8, scaleY: .8 });
@@ -54,20 +57,36 @@ function onCard(nID) {
 function openCats() {
     var list = ["Sports", "Politics", "Kardashians"];
     for (var i = 0; i < list.length; i++) {
-        forward('cat', 'cat', onCard);
+        forward2('cat', 'kontainer1', 'cat', onCat);
     }
     setTimeout(function () {
         select(categories[0]);
-    }, 600);
+    }, 400);
+}
+function openThread(catId) {
+    onThreadData();
+}
+function onThreadData(data) {
+    threads = [];
+    var list = ["Sports", "Politics", "Kardashians"];
+    for (var i = 0; i < list.length; i++) {
+        forward('thread', 'kontainer2', 'thread', onThread);
+    }
+    setTimeout(function () {
+        select(threads[0]);
+    }, 400);
 }
 
+// NAV: ********************************
+var level = 1;
 var catNav = 0;
+var threadNav = 0;
+var postNav = 0;
 function onDown() {
     console.log('down');
     deSelectAll();
     select(categories[++catNav]);
 }
-
 function onUp() {
     console.log('up');
     deSelectAll();
@@ -76,6 +95,7 @@ function onUp() {
 }
 function onRight() {
     console.log('right');
+    openThread(categories[catNav]);
 }
 
 function select(id) {

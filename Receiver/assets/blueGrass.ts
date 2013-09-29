@@ -8,7 +8,7 @@ declare var $;
 
 var viewDir:string;
 
-console.log('blueGrass v905')
+console.log('blueGrass x905')
 
 /**
  * @param ht view
@@ -20,9 +20,22 @@ function open(ht, elSel, cb_):void {
     showSpinner(true)
 	$.get(viewDir + ht + '.html', function (resp_) {
 		console.log(ht)
-        $(elSel).append(resp_)
-        showSpinner(false)
-        if (cb_) cb_()
+     $(elSel).append(resp_)
+     showSpinner(false)
+     if (cb_) cb_()
+	})
+}//()
+
+function forward2(ht, elSel, id, cb_):void {
+	showSpinner(true)
+	$.get(viewDir + ht + '.html', function (resp_) {
+		$('#'+elSel).append(resp_)
+		showSpinner(false)
+		var cur = $('#' + id)
+		console.log(ht, cur.attr('id'))
+		var gid = id + Math.floor(Math.random() * 9999999) //GUID 1 in 10mm
+		cur.attr('id', gid)//change id to guid - we could have many
+		if (cb_) cb_(gid)
 	})
 }//()
 
@@ -90,14 +103,12 @@ function getGuerryString(key) {
     return match && decodeURIComponent(match[1].replace(/\+/g, " "));
 }
 
-
 function showSpinner(status){
     if (status)
         document.body.style.cursor = 'wait';
     else
         document.body.style.cursor = 'default';
 }
-
 
 /**
  * Returns some info

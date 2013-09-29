@@ -4,13 +4,13 @@ declare var TweenLite;
 console.log('loaded v02')
 //document.body.style.cursor = 'wait'
 require(['assets/jquery-2.1.b1.js'
-	,'assets/TweenLite.min.js'
-	,'assets/blueGrass.js'
-	,'assets/CSSPlugin.min.js'   // Tween animation plugin
-	,'http://ws.algorithms.io/socket.io/socket.io.js'
-	,'assets/more/keymaster.min.js'
-	]
-		, function() { // we loaded:
+		,'assets/TweenLite.min.js'
+		,'assets/blueGrass.js'
+		,'assets/CSSPlugin.min.js'   // Tween animation plugin
+		,'http://ws.algorithms.io/socket.io/socket.io.js'
+		,'assets/more/keymaster.min.js'// key listener
+
+	] , function() { // we loaded:
 			CSSPlugin.defaultTransformPerspective = 500;
 			openCats()
 

@@ -82,12 +82,3 @@ img {
 .text-center {
   text-align: center;
 }
-#kontainer {
-  left: 0px;
-  position: absolute ;
-  width: 100%;
-}
-#container {
-  width: 100%;
-  position: absolute ;
-}
